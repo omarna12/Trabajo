@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="unviersae.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="universae.html"><img src="/Universae/imagenes/recursos plataforma/InterfazHome/HeaderWebUniversae.png" alt=""></a>
+    </header>
+
+    <div class="juego0">
+        <iframe src="https://html-classic.itch.zone/html/8771221/index.html"></iframe>
+    </div>
+    <div class="img-container">
+        <div>
+            <h2>Mantenimiento de los equipos
+                y herramientas de extinción
+                de incendios forestales</h2>
+            <br>
+            <p> En un campo de prácticas sumido en el desorden y la
+                confusión tienes que encontrar y colocar
+                las partes de los EPIs utilizados
+                en la extinción de incendios forestales.
+            </p>
+            <br>
+            <p>Grado: Coordinación de emergencias y protección civil. </p>
+            <br>
+            <p>Asignatura: Gestión de recursos de emergencias y protección civil</p>
+            <br>
+            <p>Unidad: Planificación y supervisión del
+                mantenimiento de equipos, medios técnicos e instalaciones. </p>
+            <br>
+            <p>Duración aproximada: 10 minutos.</p>
+            <br>
+            <p>Nivel de dificultad: Fácil. </p>
+        </div>
+        <div id="gallery" class="fotos">
+            <img class="image1" src="/Universae/imagenes/recursos plataforma/InterfazGame/Miniaturas/Ascensor/Ascensor0.png" alt="" onclick="openModal(this.src, 0)">
+            <img class="image2" src="/Universae/imagenes/recursos plataforma/InterfazGame/Miniaturas/Ascensor/Ascensor1.png" alt="" onclick="openModal(this.src, 1)">
+            <img class="image3" src="/Universae/imagenes/recursos plataforma/InterfazGame/Miniaturas/Ascensor/Ascensor2.png" alt="" onclick="openModal(this.src, 2)">
+            <img class="image4" src="/Universae/imagenes/recursos plataforma/InterfazGame/Miniaturas/Ascensor/Ascensor3.png" alt="" onclick="openModal(this.src, 3)">
+            <img class="image" src="/Universae/imagenes/recursos plataforma/InterfazGame/Miniaturas/Ascensor/Ascensor4.png" alt="" onclick="openModal(this.src, 4)">
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+
+        <div class="nav-arrows">
+            <img src="/Universae/imagenes/recursos plataforma/InterfazGame/carrusel/Flecha izquierda.png" class="nav-arrow" id="prev" onclick="changeImage(-1)">
+            <img src="/Universae/imagenes/recursos plataforma/InterfazGame/carrusel/Flecha derecha.png" class="nav-arrow" id="next" onclick="changeImage(1)">
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://www.facebook.com/UNIVERSAE/" target="_blank">
+            <i class="fa fa-facebook-square" style="font-size: 36px; color: white;"></i>
+        </a>
+
+        <a href="https://www.instagram.com/_universae/?hl=es" target="_blank">
+            <i class="fa fa-instagram" style="font-size: 36px; color: white;"></i>
+        </a>
+        <a href="https://www.youtube.com/c/UNIVERSAE_FP" target="_blank">
+            <i class="fa fa-youtube-play" style="font-size: 36px; color: white;"></i>
+        </a>
+        <a href="https://www.twitch.tv/" target="_blank">
+            <i class="fa fa-twitch" style="font-size: 36px; color: white;"></i>
+        </a>
+        <a href="https://www.linkedin.com/school/universae" target="_blank">
+            <i class="fa fa-linkedin-square" style="font-size: 36px; color: white;"></i>
+        </a>
+        <a href="https://www.tiktok.com/@_universae" target="_blank">
+            <i class="fa fa-vine" style="font-size: 36px; color: white;"></i>
+        </a>
+        <a href="https://twitter.com/_Universae" target="_blank">
+            <i class="fa fa-twitter" style="font-size: 36px; color: white;"></i>
+        </a>
+        <a href="https://universae.com" target="_blank">
+            <i class="fa fa-google" style="font-size: 36px; color: white;"></i>
+        </a>
+    </footer>
+    <script>
+        let currentIndex = 0;
+        const images = [
+            "/Universae/imagenes/recursos plataforma/InterfazGame/Miniaturas/Ascensor/Ascensor0.png",
+            "/Universae/imagenes/recursos plataforma/InterfazGame/Miniaturas/Ascensor/Ascensor1.png",
+            "/Universae/imagenes/recursos plataforma/InterfazGame/Miniaturas/Ascensor/Ascensor2.png",
+            "/Universae/imagenes/recursos plataforma/InterfazGame/Miniaturas/Ascensor/Ascensor3.png",
+            "/Universae/imagenes/recursos plataforma/InterfazGame/Miniaturas/Ascensor/Ascensor4.png",
+        ];
+    </script>
+    <script src="Juego.js"></script>
+</body>
+
+</html>

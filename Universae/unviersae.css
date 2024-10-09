@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "Raleway";
+    font-weight: 900; /* Raleway-Black */
+    src: url("Raleway-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway";
+    font-weight: 500; /* Raleway-Medium */
+    src: url("Raleway-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway";
+    font-weight: 400; /* Raleway-Regular */
+    src: url("Raleway-Regular.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    font-family: "Raleway";
+}
+
+header {
+    padding-top: 30px;
+    padding-left: 240px;
+    height: 100px;
+    background-color: #134c8f;
+}
+
+body {
+    background-color: #b6e1f9;
+}
+
+.container1,
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.fotos>img {
+    height: 290px;
+    width: 460px;
+}
+
+.fotos>a {
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.fotos>a:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
+}
+
+footer {
+    margin-top: 35px;
+    background-color: #134c8f;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* juego 1 */
+
+.juego0 {
+    height: 720px;
+    width: 1000px;
+    margin-left: 480px;
+    margin-top: 40px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    gap: 600px;
+}
+
+.img-container>div {
+    width: 400px;
+}
+
+.img-container>div>img {
+    width: 500px;
+    height: 300px;
+}
+
+i:hover {
+    opacity: 0.1;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.modal-content {
+    margin: auto;
+    display: block; 
+    width: 80%; 
+    max-width: 700px; 
+}
+
+#caption {
+    position: absolute;
+    top: 700px;
+    color: white;
+}
+
+.nav-arrows {
+    position: absolute;
+    display: flex;
+    gap: 800px;
+    cursor: pointer;
+}
