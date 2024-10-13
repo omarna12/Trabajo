@@ -4,10 +4,15 @@ function openModal(src, index) {
     document.getElementById("img01").src = src;
     document.getElementById("caption").innerHTML = `Imagen ${index + 1} de ${images.length}`;
     document.getElementById("myModal").style.display = "flex"; 
+
+    document.body.classList.add('no-scroll');
+
 }
 
 function closeModal() {
     document.getElementById("myModal").style.display = "none"; 
+    document.body.classList.remove('no-scroll');
+
 }
 
 function changeImage(direction) {

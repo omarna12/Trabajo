@@ -141,4 +141,98 @@ p {
     display: flex;
     gap: 800px;
     cursor: pointer;
+        
+}
+
+.no-scroll{
+overflow: hidden;
+}
+
+@media (min-width: 820px) and (max-width: 1180px) {
+    header {
+        padding-left: 280px;
+    }
+
+    .container1, .container2 {
+        flex-wrap: wrap;
+    }
+
+    footer {
+        padding-left: 100px;
+    }
+
+    iframe {
+        position: absolute; 
+        top: 0; 
+        right: 30px;
+        width: 90%; 
+        height: 90%;
+    }
+
+    .juego0 {
+        width: 0px;
+    }
+
+    .img-container {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .fotos {
+        margin-right: 100px;
+    }
+    .nav-arrows {
+        gap: 100px; 
+        position: absolute;
+        gap: 700px
+        ;
+    }
+}
+
+@media (min-width: 430px) and (max-width: 932px) {
+    header {
+        padding-left: 100px;
+    }
+
+    .container1, .container2 {
+        flex-wrap: wrap;
+        margin-left:15px;
+    }
+
+    footer>a{
+        width: 20px;
+        margin: 5px;
+    }
+
+    iframe {
+        position: absolute; 
+        top: 100px; 
+        left:25px;
+        width:90%; 
+        height: 90%;
+    }
+
+    .juego0 {
+        width: 0px;
+    }
+
+    .img-container {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .fotos {
+        margin-right: 5px;
+    }
+
+    body .fotos img {
+        width: 400px ;
+        height: auto; 
+    }
+
+    .nav-arrows {
+        position: absolute;
+        top: 600px;
+        gap: 10px;
+    }
 }
